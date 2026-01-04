@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html><head><script src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><script src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinaisminder</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(to bottom, #f0f4f8, #d1e7ff);
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        .hero-section {
+            text-align: center;
+            padding: 30px 15px;
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .hero-section h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin: 15px 0;
+        }
+        .hero-section .highlight {
+            color: #ffcc00;
+        }
+        .hero-section p {
+            margin: 10px 0 20px;
+        }
+        .btn {
+            display: inline-block;
+            margin: 10px 5px;
+            padding: 15px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            background: linear-gradient(145deg, #ff9800, #ff5722);
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .video-container {
+            margin: 20px auto;
+            max-width: 800px;
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .section {
+            text-align: center;
+            padding: 20px 15px;
+        }
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        .steps-list {
+            display: inline-block;
+            text-align: left;
+            margin: 10px auto 20px;
+            padding: 0;
+        }
+        .steps-list li {
+            list-style: none;
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+        .steps-list li:before {
+            content: "&#10004;";
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .screenshot img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #0056b3;
+            color: #fff;
+            border-radius: 10px 10px 0 0;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+<script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com","//lnkd.demdex.net/","//radar.cedexis.com/","//li.protechts.net/","challenges.cloudflare.com/","ogs.google.com"]' src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config='["facebook.com/","twitter.com/","youtube-nocookie.com/embed/","//vk.com/","//www.vk.com/","linkedin.com/","//www.linkedin.com/","//instagram.com/","//www.instagram.com/","//www.google.com/recaptcha/api2/","//hangouts.google.com/webchat/","//www.google.com/calendar/","//www.google.com/maps/embed","spotify.com/","soundcloud.com/","//player.vimeo.com/","//disqus.com/","//tgwidget.com/","//js.driftt.com/","friends2follow.com","/widget","login","//video.bigmir.net/","blogger.com","//smartlock.google.com/","//keep.google.com/","/web.tolstoycomments.com/","moz-extension://","chrome-extension://","/auth/","//analytics.google.com/","adclarity.com","paddle.com/checkout","hcaptcha.com","recaptcha.net","2captcha.com","accounts.google.com","www.google.com/shopping/customerreviews","buy.tinypass.com","gstatic.com","secureir.ebaystatic.com","docs.google.com","contacts.google.com","github.com","mail.google.com","chat.google.com","audio.xpleer.com","keepa.com","static.xx.fbcdn.net","sas.selleramp.com","1plus1.video","console.googletagservices.com","//lnkd.demdex.net/","//radar.cedexis.com/","//li.protechts.net/","challenges.cloudflare.com/","ogs.google.com"]' src="https://cdn.rpages.com.br/1941/page/19616773af4254561/sinaisminder/chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executers/vi-tr.js"></script>
+</head><body __processed_bf628861-0fe0-42b3-829f-720b833dcc0c__="true" bis_status="ok" bis_frame_id="1036" __processed_df1e435c-8aa3-4b5f-a706-8b10d78a5d70__="true">
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <img src="https://cdn.rpages.com.br/1941/page/19616773a0aa134cb/LOGO.png" alt="Logotipo" style="max-width: 120px;" id="17356361130236311180310011917" class="dont-del-img">
+            <h1>Chegou a sua vez de <span class="highlight">faturar</span> em poucos minutos!</h1>
+            <p>Descubra como transformar seu tempo em dinheiro com apenas alguns cliques.</p>
+            <a href="https://www.megagamelive.com/affiliates/?btag=2482679" class="btn" id="173563611300418581719956332954">Registe-se Agora</a>
+            <a href="https://www.megagamelive.com/affiliates/?btag=2482679" class="btn" id="173563611300846833639107228753"> ganhe agora</a>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/e-juXPxMhUc?si=HZrKYddQvNHIeAmg" title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
+        </div>
+
+        <!-- Steps Section -->
+        <div class="section">
+            <h2>Siga Estes Passos Simples</h2>
+            <ol class="steps-list">
+                >Clique no link e fa&ccedil;a o cadastro.
+                >Fa&ccedil;a um dep&oacute;sito m&iacute;nimo de 100MT.
+                >Dep&oacute;sito de 500MT ganha b&ocirc;nus de 1000MT.
+            </ol>
+            <a href="https://www.megagamelive.com/affiliates/?btag=2482679" class="btn" id="17356361130099829183387736782">Registe-se Agora</a>
+        </div>
+
+        <!-- Screenshot Section -->
+        <div class="section screenshot">
+            <h2>Comprovantes de Pagamento</h2>
+            <img src="https://cdn.rpages.com.br/1941/page/19616773a0aa134cb/PRINT.png" alt="Comprovante de Pagamento" id="17356361130269129951976116941" class="dont-del-img">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ganha Ganha. Todos os direitos reservados.</p>
+        <p><a href="https://t.me/+uaZpdz7jUZ81OTQ8" id="17356361130106004672152850199">Entrar no grupo do telegram</a></p>
+    </footer>
+
+
+
+
+
+
+
+</body></html>
